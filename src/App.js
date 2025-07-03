@@ -19,6 +19,7 @@ import Draft from "./components/Draft";
 import InternetConnection from "./components/InternetConnection";
 import MemoComp from "./components/MemoComp";
 import CallbackMemo from "./components/CallbackMemo";
+import ContextComp from "./components/context/ContextComp";
 
 function App() {
   const [is, setIs] = useState(false);
@@ -51,7 +52,9 @@ function App() {
 
       {/* <button onClick={() => setIs((prev) => !prev)}>Render App.js</button> */}
 
-      <CallbackMemo />
+      {/* <CallbackMemo /> */}
+
+      <ContextComp />
     </div>
   );
 }
