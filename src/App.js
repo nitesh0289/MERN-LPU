@@ -23,7 +23,9 @@ import ContextComp from "./components/context/ContextComp";
 import RedCounter from "./components/store/RedCounter";
 import RedMultiCounter from "./components/store/RedMultiCounter";
 import MultiRedCounter from "./components/store/MultiReducer";
-import Parent from "./components/GlobalState/Parent";
+import Parent from "./components/hooks/Parent";
+import Products from "./components/hooks/Products";
+// import Parent from "./components/GlobalState/Parent";
 
 function App() {
   const [is, setIs] = useState(false);
@@ -62,7 +64,9 @@ function App() {
       {/* <RedCounter /> */}
       {/* <RedMultiCounter /> */}
       {/* <MultiRedCounter /> */}
-      <Parent />
+      {/* <Parent /> */}
+      {/* <Parent /> */}
+      <Products />
     </div>
   );
 }
