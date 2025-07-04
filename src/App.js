@@ -20,6 +20,10 @@ import InternetConnection from "./components/InternetConnection";
 import MemoComp from "./components/MemoComp";
 import CallbackMemo from "./components/CallbackMemo";
 import ContextComp from "./components/context/ContextComp";
+import RedCounter from "./components/store/RedCounter";
+import RedMultiCounter from "./components/store/RedMultiCounter";
+import MultiRedCounter from "./components/store/MultiReducer";
+import Parent from "./components/GlobalState/Parent";
 
 function App() {
   const [is, setIs] = useState(false);
@@ -54,7 +58,11 @@ function App() {
 
       {/* <CallbackMemo /> */}
 
-      <ContextComp />
+      {/* <ContextComp /> */}
+      {/* <RedCounter /> */}
+      {/* <RedMultiCounter /> */}
+      {/* <MultiRedCounter /> */}
+      <Parent />
     </div>
   );
 }
