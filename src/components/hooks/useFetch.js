@@ -17,7 +17,6 @@ function useFetch(arg) {
     setLoading(false);
   };
 
-  console.log({ data, error, loading });
   useEffect(() => {
     handleFetch();
   }, [url]);
