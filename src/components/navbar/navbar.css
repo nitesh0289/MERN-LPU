@@ -1,7 +1,7 @@
 header {
   display: flex;
   color: white;
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   align-items: center;
   justify-content: space-between;
   background-color: rgb(0, 0, 0);
@@ -11,6 +11,13 @@ nav {
   display: flex;
   font-size: 18px;
   gap: 15px;
+}
+
+.navbrand {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 nav > a {

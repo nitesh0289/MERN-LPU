@@ -4,6 +4,7 @@ import useFetch from "../hooks/useFetch";
 
 function ProductPage() {
   const { id } = useParams();
+  console.log({ id });
   const { data, error, loading } = useFetch({
     url: `https://fakestoreapi.com/products/${id}`,
     method: "GET"

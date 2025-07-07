@@ -6,7 +6,9 @@ import "./navbar.css";
 function Navbar() {
   return (
     <header>
-      <h1>LPU Store</h1>
+      <a className="navbrand" href="/">
+        LPU Store
+      </a>
       <nav>
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/contact"}>Contact</NavLink>

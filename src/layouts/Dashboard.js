@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 
 function Dashboard() {
   return (
-    <main>
+    <main style={{ height: "100vh", padding: 0, margin: 0 }}>
       {/* Navbar */}
       <Navbar />
       <Outlet />
