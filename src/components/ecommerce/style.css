@@ -1,0 +1,12 @@
+.products-container {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+ul {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
