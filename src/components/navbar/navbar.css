@@ -28,7 +28,14 @@ nav > a {
 .logout-btn {
   color: white;
   border: none;
+  cursor: pointer;
   padding: 10px 15px;
   border-radius: 5px;
   background-color: orange;
+}
+
+.right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }

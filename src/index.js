@@ -7,6 +7,10 @@ import Products from "./components/ecommerce/Products";
 import ProductPage from "./components/ecommerce/Product";
 import CartPage from "./components/ecommerce/Cart";
 import Dashboard from "./layouts/Dashboard";
+import Signup from "./components/signup";
+import Login from "./components/login";
+import PrivateRoute from "./routes/Private";
+import AuthRoute from "./routes/AuthRoute";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -68,10 +72,47 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Dashboard />}>
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            index
+            element={
+              <PrivateRoute>
+                <Home />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <PrivateRoute>
+                <About />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <PrivateRoute>
+                <Contact />
+              </PrivateRoute>
+            }
+          />
           <Route path="/cart" element={<CartPage />} />
+          <Route
+            path="/login"
+            element={
+              <AuthRoute>
+                <Login />
+              </AuthRoute>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <AuthRoute>
+                <Signup />
+              </AuthRoute>
+            }
+          />
           <Route path="/profile">
             <Route index element={<Profile />} />
             <Route path=":username">

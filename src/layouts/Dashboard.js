@@ -8,6 +8,7 @@ function Dashboard() {
     <main style={{ height: "100vh", padding: 0, margin: 0 }}>
       {/* Navbar */}
       <Navbar />
+      {/* Nested Routes will render here */}
       <Outlet />
       {/* Footer */}
       <Footer />
