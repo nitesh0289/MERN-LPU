@@ -14,6 +14,7 @@ function Navbar() {
     } else {
       setUser(null);
     }
+    console.log("hello useEffect runs")
   }, [localStorage.getItem("loggedinUser")]);
 
   const handleClick = () => {

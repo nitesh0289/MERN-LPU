@@ -1,5 +1,4 @@
 import React, { useReducer } from "react";
-import Counter from "./Counter";
 import ComponentA from "./ComponentA";
 
 const initialValue = 0;
